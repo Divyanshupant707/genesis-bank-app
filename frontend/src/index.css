@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-ink text-paper font-body antialiased;
+    background-image: radial-gradient(circle at 20% 0%, rgba(201, 162, 39, 0.08), transparent 45%),
+      radial-gradient(circle at 100% 100%, rgba(44, 107, 88, 0.12), transparent 50%);
+  }
+  ::selection {
+    background: rgba(201, 162, 39, 0.35);
+  }
+  :focus-visible {
+    outline: 2px solid #c9a227;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .ledger-rule {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 27px,
+      rgba(201, 162, 39, 0.16) 28px
+    );
+  }
+
+  .stamp-badge {
+    @apply inline-flex items-center gap-1 rounded-sm border px-2 py-0.5 text-[11px] font-mono font-semibold uppercase tracking-widest;
+    transform: rotate(-2deg);
+  }
+
+  .perforated::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1px;
+    background-image: radial-gradient(circle, rgba(11, 18, 32, 0.55) 1.5px, transparent 1.5px);
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-rise {
+  animation: rise 0.35s ease-out both;
+}
