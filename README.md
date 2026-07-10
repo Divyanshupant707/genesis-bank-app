@@ -1,3 +1,12 @@
+<img width="1907" height="971" alt="image" src="https://github.com/user-attachments/assets/f0c3ba6e-ae0a-4433-886a-a1ba1215a785" />
+<img width="1902" height="958" alt="image" src="https://github.com/user-attachments/assets/ad1720bf-8a57-461d-b53d-fc9e3f2c2e37" />
+<img width="1282" height="666" alt="image" src="https://github.com/user-attachments/assets/6b992b3b-cf09-44f3-820a-1fd42e58748f" />
+<img width="1158" height="535" alt="image" src="https://github.com/user-attachments/assets/77c1da38-c858-43f5-a79c-377d6ec641bb" />
+<img width="1192" height="502" alt="image" src="https://github.com/user-attachments/assets/127f490c-253f-4a3a-8a9b-5f39d35ab9c8" />
+
+
+
+
 # Genesis Bank Management System
 
 A full-stack web app conversion of the original C++ console **Genesis Bank Management
